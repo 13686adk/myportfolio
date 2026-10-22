@@ -194,15 +194,6 @@ export function Contact() {
                   exit={{ opacity: 0 }}
                   className="flex flex-col gap-5"
                 >
-                  {!IS_CONFIGURED ? (
-                    <div className="rounded-lg border border-amber-500/35 bg-amber-500/8 px-4 py-3 text-xs leading-relaxed text-amber-300">
-                      <strong className="font-semibold">EmailJS not configured.</strong>{" "}
-                      Add <code className="font-mono">NEXT_PUBLIC_EMAILJS_SERVICE_ID</code>,{" "}
-                      <code className="font-mono">NEXT_PUBLIC_EMAILJS_TEMPLATE_ID</code> and{" "}
-                      <code className="font-mono">NEXT_PUBLIC_EMAILJS_PUBLIC_KEY</code> to{" "}
-                      <code className="font-mono">.env.local</code> to activate sending.
-                    </div>
-                  ) : null}
 
                   <div className="grid gap-5 sm:grid-cols-2">
                     <Field
